@@ -2,7 +2,7 @@
 
 1. This solution developed in C # contains two projects:
 - ShoppingInEbayFunctionalTest: Contains the main method that will execute the automated test.
-- ShoppingInEbayFunctionalTest.Core: Contains the logic as the solution was built, in addition to the automated script.
+- ShoppingInEbayFunctionalTest.Core: Contains the logic as the solution was built, in addition to the automated script (This file had to be compressed because it is very large.)
 
 2. To run the script:
 The ShoppingInEbayFunctionalTest -> bin -> Debug -> ShoppingInEbayFunctionalTest.exe project must be accessed. This .exe file will execute the automated script.

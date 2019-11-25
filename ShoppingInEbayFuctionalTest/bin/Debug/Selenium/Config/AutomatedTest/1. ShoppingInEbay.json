@@ -1,0 +1,144 @@
+{
+  "name": "ShoppingInEbay",
+  "trace": [
+    {
+      "description": "1. Enter to Ebay",
+      "trace_detail": [
+        {
+          "name": "Navigate",
+          "value": "https://www.ebay.com/"
+        }
+      ]
+    },
+    {
+      "timeout": 2,
+      "frame": "TimeOut"
+    },
+    {
+      "description": "2. Search for shoes",
+      "selector": "div[id='gh-ac-box2']>input[id*='gh-ac']",
+      "type_selector": "CssSelector",
+      "timeout": 20,
+      "trace_detail": [
+        {
+          "name": "Click"
+        },
+        {
+          "name": "Clear"
+        },
+        {
+          "name": "SendKeys",
+          "value": "Zapatos"
+        },
+        {
+          "name": "SendKeys",
+          "value": "Keys.Enter"
+        }
+      ]
+    },
+    {
+      "timeout": 2,
+      "frame": "TimeOut"
+    },
+    {
+      "description": "3. Select Brand",
+      "selector": "div[class='srp-rail__left']>ul>li>ul>li:nth-child(2)>ul>li:nth-child(3)>div:nth-child(2)>div:nth-child(2)>div>button",
+      "type_selector": "CssSelector",
+      "timeout": 20,
+      "trace_detail": [
+        {
+          "name": "DoubleClick"
+        }
+      ]
+    },
+    {
+      "timeout": 10,
+      "frame": "TimeOut"
+    },
+    {
+      "selector": ".x-searchable-list__fieldset > li:nth-child(6) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > div:nth-child(3) > span:nth-child(1)",
+      "type_selector": "CssSelector",
+      "timeout": 20,
+      "trace_detail": [
+        {
+          "name": "Click"
+        }
+      ]
+    },
+    {
+      "timeout": 10,
+      "frame": "TimeOut"
+    },
+    {
+      "description": "4. Select size 10 and 5. Print the results",
+      "selector": "#x-refine__group_1__0 > ul:nth-child(1) > li:nth-child(5) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > div:nth-child(3) > span:nth-child(1)",
+      "type_selector": "CssSelector",
+      "timeout": 20,
+      "trace_detail": [
+        {
+          "name": "Click"
+        }
+      ]
+    },
+    {
+      "timeout": 2,
+      "frame": "TimeOut"
+    },
+    {
+      "description": "6. Order by price ascendant",
+      "selector": "#srp-river-results-query_answer1-w0-x-carousel-items > ul > li:nth-child(2) > div > a",
+      "type_selector": "CssSelector",
+      "timeout": 20,
+      "trace_detail": [
+        {
+          "name": "Click"
+        }
+      ]
+    },
+    {
+      "timeout": 10,
+      "frame": "TimeOut"
+    },
+    {
+      "description": "7. Assert the order taking the first 5 results",
+      "selector": "#srp-river-results-listing1 > div > div.s-item__image-section > div > a > div",
+      "type_selector": "CssSelector",
+      "timeout": 20,
+      "trace_detail": [
+        {
+          "name": "Click"
+        }
+      ]
+    },
+    {
+      "timeout": 10,
+      "frame": "TimeOut"
+    },
+    {
+      "selector": "#msku-opt-0",
+      "type_selector": "CssSelector",
+      "timeout": 20,
+      "trace_detail": [
+        {
+          "name": "Click"
+        }
+      ]
+    },
+    {
+      "timeout": 2,
+      "frame": "TimeOut"
+    },
+    {
+      "selector": "#isCartBtn_btn",
+      "type_selector": "CssSelector",
+      "timeout": 20,
+      "trace_detail": [
+        {
+          "name": "Click"
+        }
+      ]
+    }
+  ]
+}
+
+
